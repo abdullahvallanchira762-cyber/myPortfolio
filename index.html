@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Mctly1H_Bqyt5eaHh",
+      });
+   })();
+</script>
+
+</head>
+<body>
+    
+<header>   
+  <div class="nav-container">
+
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Hamburger icon -->
+  <label for="menu-toggle" class="menu-select">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+    <!-- Navigation -->
+    <nav class="top">
+      <ul>
+        <li><a href="#About">About Me</a></li> 
+        <li><a href="#Skills">Skill section</a></li> 
+        <li><a href="#Pro">Project section</a></li> 
+        <li><a href="#Con">Contact Me</a></li> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Photo-Section -->
+    <div class="profile-container">
+<div class="picture">
+    <div class="Image">
+       <img src="New folder/Black blazer and bla.png" alt="Profile picture">
+       </div>
+    </div>
+    <div class="name">
+    <h1>Abdullah</h1>    
+    </div>
+</div>
+
+<!-- About Me-Section -->
+<div class="aboutme" id="About">
+<!-- <h2>About Me</h2> -->
+<p style="margin-top: 3px;">Hi, I’m <b>Abdullah</b>, a passionate tech enthusiast and <b>BCA</b> student at <b>Yenepoya</b> (Deemed to be University), Bengaluru.I specialize in <b> Artificial intelligence ,machine learning and robotics with hands on experience in Web Development (HTML,CSS,and JavaScript) , Machine Learning and IOT</b>.currently working as a <b>Python and React Full Stack Developer</b> Intern at <b>Bridgeon</b>. My role allows me to combine backend efficiency with frontend creativity, building scalable applications that deliver seamless user experiences. As part of my internship, I’m sharpening my skills in modern web technologies, collaborating on real-world projects, and learning how to bridge the gap between clean code and polished design. This experience is helping me grow into a versatile developer who thrives on solving problems and creating impactful solutions.
+</p>
+</div>
+
+<!-- Skill-section -->
+<div class="skill" id="Skills">
+<h2>My skills</h2><hr>
+<ul>
+    <li><b> Programming Languages:</b> Python , HTML , CSS , JavaScript & SQL.</li>
+    <li><b>Machine Learning:</b> Data preprocessing, model building, evaluaion, visualization.</li>
+    <li><b>Web Development:</b> Responsive design, usability-focused layouts, modular code design.</li>
+    <li><b>Databases:</b> SQL queries, schema design, optimaization.</li>
+    <li><b>Cybersecurity & Robotics:</b> Capture the Flag(CTF) challenges, automation projects.</li>
+    <li><b>Professional Skills:</b> Strong communication and leadership abilities. Team collaboration and project managment experience. Quick learning and adaptability in past-paced enviroments.</li>
+</ul>
+</div>
+
+<!-- project-section -->
+<div class="project" id="Pro">
+    <h2>projects</h2>
+    <ul>
+        <li><b>Industry Project:</b> Succesfully completed a 135-hour Industry Project titled " <b>Building an intelligent Application with Azure AI search"</b> Under <b>TCS iON</b> Applied Industry Projects.</li>
+          <li><b>Spotify-clone:</b>  Developed a fullstack music streaming web appleplicating <b>core spotify features</b>. Also implemented playlist creation , search functionality, and music player . <b> Built responsive UI with HTML, CSS, and JavaScript ; backend integration with python and SQL.</b></li>
+          <li><b>Automatic Pet Feeder:</b>  Developed an Automatic Pet Feeder using <b>Arduino</b>, <b>enabling remote feeding scheduling and monitoring through connected devices</b>, ensuring pets receive timely meals while enhancing owner convenience.</li>
+   
+     </ul>    
+</div>
+
+</main>
+
+<footer>
+  
+  
+  
+  
+  <div class="mailcontainer">
+    <div class="mailbox">
+      <div class="mailbox1">
+        <h1>Hi there..!</h1>
+      <h4>Thanks for visiting my website. Whether you want to work together, ask a question, or simply say hello, feel free to reach out through this form.
+            <br><br>
+            I’ll reply as soon as I can!    
+          </h4>
+      </div>
+      <div class="mailbox2">
+      <h1>Contact form</h1>
+        <h5 for="name">Name</h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+             <h5 for="email">Email</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+            <h5 for="message">Message</h5>
+            <textarea class="form-control" id="message" rows="3"></textarea><br>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>   
+          </div>
+    </div>
+  </div>
+
+
+
+
+<div class="foot-container" id="Con">
+    <!-- Contact-section -->
+<div class="contact-1" >
+   <u> contact me</u>
+</div>
+<div class="contact-2">
+   <a href="http://www.linkedin.com/in/abdullah-455a96383" target="_blank"> <img src="New folder/linkedin-logo-png-2032.png" alt="" width="80px"></a>
+    <a href="https://github.com/abdullahvallanchira762-cyber"><img src="New folder/github-icon-1-logo-black-and-white.png" alt="" style="width: 25px;"></a>
+    <a href="http://mailto:abdullahvallanchira762@gmail.com" target="_blank"><img src="New folder/gmail-icon-38481.png" alt="" width="50px"></a>
+    <a href="tel:+918848325562"><img src="New folder/mobile-icon-png-2350.png" alt="" width="25px"></a>
+    <a href="https://www.instagram.com/avullah._?igsh=bHduNWZ3dDJmbm1z" target="_blank"><img src="New folder/icons8-instagram-48.png" alt="" width="30px"></a>
+</div>
+</div> 
+</footer>
+
+     <script src="index.js"></script>  
+</body>
+</html>
+
+

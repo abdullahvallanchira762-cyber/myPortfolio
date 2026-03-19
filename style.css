@@ -1,0 +1,408 @@
+.body{
+    width: 100%;
+    height: auto;  
+}
+html{
+        scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+.nav-container{
+   width: 100%;
+   height:60px;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: larger;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: rgb(0, 0, 0);
+  
+}
+.top{
+    width: 100%;
+     /* background-color:aqua;  */
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.top ul{
+   display: flex;
+   height: 100%;
+   align-items: center;
+   gap: 60px; 
+   list-style: none; 
+}
+.top a:hover{
+    /* background-color: hsl(0, 0%, 84%); */
+    /* border-radius: 8px; */  
+    color: rgb(116, 124, 130);
+}
+a{
+    text-decoration: none;
+    color: black;   
+}
+
+main{
+    background-color: rgb(1, 1, 1);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.picture{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.picture img{
+    width: 250px;
+    border: 8px double white;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 0.5s ease;
+}
+.picture img:hover{
+   transform: scale(1.2);
+}
+.name{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.aboutme{
+    margin-top: 80px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.skill{
+    margin-top: 70px;
+    margin-left:5px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+ul{
+    margin-left:25px ;
+}
+.project{
+ margin-top: 60px;
+    margin-left:5px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    margin-bottom: 50px;
+}
+.foot-container{
+    width: 100%;
+    height:70px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    color: black;
+}
+.contact-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.contact-2{
+    width: 100%;
+    height:75%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 60px;
+}
+.contact-2 img:hover{
+   transform: scale(1.1);
+}
+.menu-select{
+    margin-left: auto;
+    display: none;
+    size: larger;
+}
+/* MAIL CONTAINER */
+.mailcontainer{
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #010101;
+    display: flex;
+    justify-content: center;
+}
+
+/* BOX WRAPPER */
+.mailbox{
+    width: 100%;
+    max-width: auto;
+    display: flex;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* LEFT SIDE */
+.mailbox1{
+    width: 50%;
+    background-color: #1f2224;
+    color: white;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mailbox1 h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.mailbox1 h4{
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* RIGHT SIDE (FORM) */
+.mailbox2{
+    width: 50%;
+    padding: 50px 40px;
+}
+
+.mailbox2 h1{
+    margin-bottom: 20px;
+    color: #040404;
+}
+
+/* INPUTS */
+.form-control{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/* TEXTAREA */
+textarea.form-control{
+    resize: none;
+}
+
+/* BUTTON */
+.btn{
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0c6dce;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #35608a;
+}
+
+/* MOBILE RESPONSIVE  */
+@media (max-width: 750px){
+
+    /* NAVBAR */
+    .top{
+        display: none;
+    }
+
+    .menu-select{
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        padding-right: 20px;
+    }
+
+    .nav-container{
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    /* PROFILE IMAGE */
+    .picture img{
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    /* NAME */
+    .name h1{
+        font-size: 26px;
+    }
+
+    /* ABOUT */
+    .aboutme{
+        font-size: 16px;
+        margin: 40px 15px 0 15px;
+        text-align: justify;
+    }
+
+    /* SKILLS */
+    .skill{
+        font-size: 16px;
+        margin: 40px 15px 0 15px;
+    }
+
+    .skill ul{
+        margin-left: 15px;
+    }
+
+    /* PROJECT */
+    .project{
+        font-size: 16px;
+        margin: 40px 15px;
+    }
+
+    .project ul{
+        margin-left: 15px;
+    }
+
+    /* FOOTER */
+    .foot-container{
+        height: auto;
+        padding: 10px 0;
+    }
+    .mailbox{
+        flex-direction: column;
+    }
+
+    .mailbox1,.mailbox2{
+        width: 100%;
+    }
+
+    .mailbox1{
+        padding: 40px 25px;
+        text-align: center;
+    }
+
+    .mailbox1 h1{
+        font-size: 30px;
+    }
+
+    .mailbox2{
+        padding: 35px 25px;
+    }
+
+    .contact-2{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .contact-2 img{
+        width: 25px;
+    }
+
+}
+
+
+/* Hide checkbox */
+#menu-toggle{
+    display: none;
+}
+
+/* Default mobile menu hidden */
+@media (max-width: 750px){
+
+    .top{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+
+    .top ul{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked ~ .top{
+        display: flex;
+    }
+
+    .menu-select{
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .contact-1{
+        font-size: smaller;
+    }
+   
+         
+}
+/* HAMBURGER ICON */
+.menu-select{
+    display: none;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* lines */
+.menu-select span{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: black;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+/* line positions */
+.menu-select span:nth-child(1){
+    top: 0;
+}
+
+.menu-select span:nth-child(2){
+    top: 9px;
+}
+
+.menu-select span:nth-child(3){
+    bottom: 0;
+}
+/* ANIMATION TO X */
+#menu-toggle:checked + .menu-select span:nth-child(1){
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+#menu-toggle:checked + .menu-select span:nth-child(2){
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu-select span:nth-child(3){
+    transform: rotate(-45deg);
+    bottom: 10px;
+}
+@media (max-width:750px){
+     .menu-select{
+        display: block;
+    }
+}
